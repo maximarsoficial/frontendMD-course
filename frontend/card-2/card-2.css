@@ -1,0 +1,40 @@
+/* COLOR FONDO DE LA IMAGEN : GRIS */
+body{
+    background-color: #262626;
+    
+    }
+    /* COLOR DEL DIV QUE CONTIENE A LA IMAGEN CON TODO EL TEXTO*/
+     .fondo{
+        background-color: floralwhite;
+        border-radius: 10px;
+        margin: auto;
+        padding: auto;
+        width: 500px;
+    
+    }
+    
+    
+    .imagen1{
+       width: 500px;
+       border-radius: 10px;               
+    }
+
+    .learning{
+        color: #ff7a18;
+        font-family: 'Rubik', sans-serif;
+    }
+    
+    .h1{
+        color: #111;
+        font-family: 'Rubik', sans-serif;
+        
+    }
+    
+    .p1{
+        color: #777;
+        font-family: 'Rubik', sans-serif;   
+    }
+    .p2{
+        color: #777;
+        font-family: 'Rubik', sans-serif;  
+    }

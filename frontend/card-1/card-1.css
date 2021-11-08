@@ -2,6 +2,7 @@ body{
 background-color: #262626;
 }
 
+
  .fondo{
     background-color: floralwhite;
     border-radius: 10px;
@@ -13,8 +14,6 @@ background-color: #262626;
 
 
 .imagen1{
-    align-items: flex-start;
-    justify-content: flex-start;
     border-radius: 5px;
     
     

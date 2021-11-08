@@ -23,10 +23,10 @@
 
 ```
     familia de fuentes: MD Primer Bold,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
-    color de fondo: #262626;
-    color de fondo de tarjeta: #ffffff;
-    color titulos: #111;
-    color de texto en tarjeta chica: #777;
+   >> color de fondo: #262626; 
+    >>color de fondo de tarjeta: #ffffff;
+    >>color titulos: #111;
+    >>color de texto en tarjeta chica: #777;
     color de etiqueta: #ff7a18;
     color de texto en tarjeta grande: #474747;
     color de link embebido en parrafo: #0089c7;
