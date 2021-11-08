@@ -1,0 +1,38 @@
+body{
+background-color: #262626;
+}
+
+ .fondo{
+    background-color: floralwhite;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    width: 500px;
+    
+   
+}
+
+
+.imagen1{
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 5px;
+    align-items: center;
+    
+    
+}
+
+.titulo1{
+    color: #111;
+    font-family: 'Rubik', sans-serif;
+    
+}
+
+.titulo2{
+    color: #777;
+    font-family: 'Rubik', sans-serif;   
+}
+.titulo3{
+    color: #777;
+    font-family: 'Rubik', sans-serif;  
+}
