@@ -1,0 +1,62 @@
+/* general */
+body{
+    background-color: #262626;
+    }
+/* card-1  */
+
+.fondo{
+    background-color: floralwhite;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 30px;
+       
+}
+
+.imagen1{
+    border-radius: 5px;       
+}
+
+.titulo1{
+    color: #111;
+    font-family: 'Rubik', sans-serif;
+    
+}
+
+.titulo2{
+    color: #777;
+    font-family: 'Rubik', sans-serif;   
+}
+.titulo3{
+    color: #777;
+    font-family: 'Rubik', sans-serif;  
+}
+
+/* card-2  */
+
+
+/* card-3  */
+.imagen3{
+    border-radius: 10px;      
+    width: 100%;  
+ }
+ .imagenpequeña{
+    border-radius: 50px;      
+    width: 50px; 
+ }
+
+ .learning{
+     color: #ff7a18;
+     font-family: 'Rubik', sans-serif;
+ }
+ 
+ .h1{
+     color: #111;
+     font-family: 'Rubik', sans-serif;
+     
+ }
+ 
+ .p1{
+     color: #777;
+     font-family: 'Rubik', sans-serif;   
+ }
+ 

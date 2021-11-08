@@ -18,6 +18,10 @@ body{
        width: 500px;
        border-radius: 10px;               
     }
+    .imagenpequeña{
+        border-radius: 50px;      
+        width: 50px; 
+     }
 
     .learning{
         color: #ff7a18;
@@ -34,7 +38,4 @@ body{
         color: #777;
         font-family: 'Rubik', sans-serif;   
     }
-    .p2{
-        color: #777;
-        font-family: 'Rubik', sans-serif;  
-    }
+    
