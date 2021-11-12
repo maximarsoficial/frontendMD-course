@@ -1,0 +1,3 @@
+// 4) Genaro decidió comprar un Mustang
+//         - Tomar el listado de autos que cumplen la condición N°3 (autosMarcaPuertaGenaro) y devolver un objeto llamado autoComprado. Utilizaremos el método filter sobre la propiedad modelo. Es obligatorio utilizar una comparación estricta (===) para que el objeto sea el que cumpla la condición.
+//         - Imprimir por pantalla el objeto autoComprado, con la leyenda `Felicitaciones Genaro por haber adquirido tu nuevo y flamante ${autoComprado.marca} ${autoComprado.modelo} que disfrutes tus ${autoComprado.puertas} puertas`.
