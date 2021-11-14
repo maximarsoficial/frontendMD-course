@@ -31,7 +31,8 @@ const autosDisponibles = [
 const autosPuertaGenaro = autosDisponibles.map(element => {
     if(element.puertas <=4)
     console.log('TENEMOS DISPONIBLES EL AUTO - MODELO:',element.modelo,' --> ', ' MARCA:',element.marca)
-    return element.puertas <= 4 ;
+    return element.puertas <=4;
+    
 })
 
 console.log('La cantidad de autos con 4 o menos puertas son:', autosPuertaGenaro)
