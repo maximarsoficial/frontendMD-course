@@ -40,7 +40,7 @@ const autosPuertaGenaro = autosDisponibles.map(element => {
 })
 
 console.log('------------------------------------------') 
-console.log('AQUI LES PRESENTAMOS OTRAS MARCAS DISPINIBLES PERO CON MENOS DE 4 PUERTAS') 
+console.log('AQUI LES PRESENTAMOS OTRAS MARCAS DISPONIBLES PERO CON 4 O MENOS PUERTAS') 
 console.log('------------------------------------------') 
 const autosMarcaPuertaGenaro = autosDisponibles.map(index => {
     if(index.puertas <= 4)
