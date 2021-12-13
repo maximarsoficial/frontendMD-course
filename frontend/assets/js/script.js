@@ -84,7 +84,6 @@ const errors = {
 // Itera el array de inputs y crea un evento que tiene una funcion para cada uno!
 boxForm.forEach((box) => {
     const input = box.querySelector('input');
-
     input.addEventListener('input', (event) => {
         validationform(input)
     })
@@ -165,8 +164,8 @@ function incompleteForm() {
 
 // Funciones de Errores y Validaciones
 function set_error(input, msj) {
-    const formCotrol = input.parentElement;
-    const paragraph = formCotrol.querySelector("p");
+    const formControl = input.parentElement;
+    const paragraph = formControl.querySelector("p");
     input.style.border = "2px solid rgb(190, 36, 9)";
     paragraph.style.display = "block";
     paragraph.innerText = msj;
