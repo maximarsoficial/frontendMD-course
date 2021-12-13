@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url(../image/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+label {
+    font-weight: 500;
+    position: absolute;
+}
+
+.container-all {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.back-box {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 217, 255, 0.5);
+}
+
+.back-box div {
+    margin: 100px 40px;
+    color: white;
+    transition: all 350ms;
+}
+
+.back-box div p,
+.back-box button {
+    margin-top: 30px;
+}
+
+.back-box button {
+    padding: 10px 60px;
+    border: 2px solid #fff;
+    font-size: 15px;
+    background: transparent;
+    font-weight: 600;
+    color: white;
+}
+
+.back-box button:hover {
+    background: #fff;
+    color: #46A2FD;
+}
+
+
+/*Formularios*/
+
+.container-login-register {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+    transition: left 350ms;
+}
+
+.container-login-register form {
+    width: 100%;
+    padding: 80px 20px;
+    background: white;
+    position: absolute;
+    border-radius: 50px;
+}
+
+.container-login-register form h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgba(0, 217, 255, 0.979);
+}
+
+.container-login-register form input {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #f2f2f2;
+    font-size: 15px;
+}
+
+.container-login-register form button {
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #16819c;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+}
+
+@media screen and (max-width: 850px) {
+    main {
+        margin-top: 25px;
+    }
+    .back-box {
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+    .back-box div {
+        margin: 0px;
+        position: absolute;
+    }
+    /*Formularios*/
+    .container-login-register {
+        top: -30px;
+        left: -50px;
+        margin: auto;
+    }
+    .container-login-register form {
+        position: relative;
+    }
+}

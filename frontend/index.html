@@ -1,12 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MI PRIMER SITIO WEB</title>
+    <title>Login y Register - curso frontend</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <h1>HOLA MUNDO</h1>
+
+    <main>
+
+        <div class="container-all">
+            <div class="back-box">
+                <div class="back-box-login">
+                    <h3>Do you already have an account?</h3>
+                    <p>Login to enter the page</p>
+                    <button id="btn-login">Log in</button>
+                </div>
+                <div class="back-box-register">
+                    <h3>Do not you have an account yet?</h3>
+                    <p>Sign up so you can log in</p>
+                    <button id="btn-register">Check in</button>
+                </div>
+            </div>
+
+            <!--Formulario de Login y registro-->
+            <div class="container-login-register">
+                <!--Login-->
+                <form action="" class="form-login">
+                    <h2>LOG IN</h2>
+                    <div class="form_-ontrol">
+                        <input type="email" id="email" name="email" placeholder="example@gmail.com" />
+                        <p></p>
+                    </div>
+                    <div class="form-control">
+                        <input type="password" id="password" name="password " placeholder="password" />
+                        <p></p>
+                    </div>
+                    <button type="button" id="btn-login" onclick="alert('ITS ONLY A DEMO')" value="LOGIN">LOGIN</button>
+                </form>
+
+                <!--Register-->
+                <form action="" class="form-register">
+                    <h2>REGISTER</h2>
+                    <div class="form_control">
+                        <input type="text" id="name" name="name" placeholder="Name" />
+                        <p></p>
+                    </div>
+
+                    <div class="form-control">
+                        <input type="email" id="email" name="email" placeholder="example@gmail.com" />
+                        <p></p>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" id="user" name="user" placeholder="User" />
+                        <p></p>
+                    </div>
+                    <div class="form-control">
+                        <input type="password" id="password" name="password" placeholder="password" />
+                        <p></p>
+                    </div>
+
+                    <button onclick="alert('SOLO ES UN DEMO')" value="REGISTER">REGISTER</button>
+
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
