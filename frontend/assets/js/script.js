@@ -1,73 +1,73 @@
 //Ejecutando funciones
-document.getElementById("btn-iniciar-sesion").addEventListener("click", iniciarSesion);
-document.getElementById("btn-registrarse").addEventListener("click", register);
+document.getElementById("btn-login").addEventListener("click", login);
+document.getElementById("btn-register").addEventListener("click", register);
 window.addEventListener("resize", anchoPage);
 
 //Declarando variables
-const formularioLogin = document.querySelector(".formulario-login");
-const formularioRegister = document.querySelector(".formulario-register");
-const contenedorLoginRegister = document.querySelector(".contenedor-login-register");
-const cajaTraseraLogin = document.querySelector(".caja-trasera-login");
-const cajaTraseraRegister = document.querySelector(".caja-trasera-register");
+const formLogin = document.querySelector(".form-login");
+const formRegister = document.querySelector(".form-register");
+const containerLoginRegister = document.querySelector(".container-login-register");
+const backBoxLogin = document.querySelector(".back-box-login");
+const backBoxRegister = document.querySelector(".back-box-register");
 
 //FUNCIONES
 
-function anchoPage(){
+function anchoPage() {
 
-    if (window.innerWidth > 850){
-        cajaTraseraRegister.style.display = "block";
-        cajaTraseraLogin.style.display = "block";
-    }else{
-        cajaTraseraRegister.style.display = "block";
-        cajaTraseraRegister.style.opacity = "1";
-        cajaTraseraLogin.style.display = "none";
-        formularioLogin.style.display = "block";
-        contenedorLoginRegister.style.left = "0px";
-        formularioRegister.style.display = "none";   
+    if (window.innerWidth > 850) {
+        backBoxRegister.style.display = "block";
+        backBoxLogin.style.display = "block";
+    } else {
+        backBoxRegister.style.display = "block";
+        backBoxRegister.style.opacity = "1";
+        backBoxLogin.style.display = "none";
+        formLogin.style.display = "block";
+        containerLoginRegister.style.left = "0px";
+        formRegister.style.display = "none";
     }
 }
 
 anchoPage();
 
 
-    function iniciarSesion(){
-        if (window.innerWidth > 850){
-            formularioLogin.style.display = "block";
-            contenedorLoginRegister.style.left = "10px";
-            formularioRegister.style.display = "none";
-            cajaTraseraRegister.style.opacity = "1";
-            cajaTraseraLogin.style.opacity = "0";
-        }else{
-            formularioLogin.style.display = "block";
-            contenedorLoginRegister.style.left = "0px";
-            formularioRegister.style.display = "none";
-            cajaTraseraRegister.style.display = "block";
-            cajaTraseraLogin.style.display = "none";
-        }
+function login() {
+    if (window.innerWidth > 850) {
+        formLogin.style.display = "block";
+        containerLoginRegister.style.left = "10px";
+        formRegister.style.display = "none";
+        backBoxRegister.style.opacity = "1";
+        backBoxLogin.style.opacity = "0";
+    } else {
+        formLogin.style.display = "block";
+        containerLoginRegister.style.left = "0px";
+        formRegister.style.display = "none";
+        backBoxRegister.style.display = "block";
+        backBoxLogin.style.display = "none";
     }
+}
 
-    function register(){
-        if (window.innerWidth > 850){
-            formularioRegister.style.display = "block";
-            contenedorLoginRegister.style.left = "410px";
-            formularioLogin.style.display = "none";
-            cajaTraseraRegister.style.opacity = "0";
-            cajaTraseraLogin.style.opacity = "1";
-        }else{
-            formularioRegister.style.display = "block";
-            contenedorLoginRegister.style.left = "0px";
-            formularioLogin.style.display = "none";
-            cajaTraseraRegister.style.display = "none";
-            cajaTraseraLogin.style.display = "block";
-            cajaTraseraLogin.style.opacity = "1";
-        }
+function register() {
+    if (window.innerWidth > 850) {
+        formRegister.style.display = "block";
+        containerLoginRegister.style.left = "410px";
+        formLogin.style.display = "none";
+        backBoxRegister.style.opacity = "0";
+        backBoxLogin.style.opacity = "1";
+    } else {
+        formRegister.style.display = "block";
+        containerLoginRegister.style.left = "0px";
+        formLogin.style.display = "none";
+        backBoxRegister.style.display = "none";
+        backBoxLogin.style.display = "block";
+        backBoxLogin.style.opacity = "1";
+    }
 }
 
 // ----------------VALIDACIONES LOGIN Y FORM--------------------------------------------------------
-const formulario = document.getElementById("formulario");
-const btnLogin = document.getElementById("btnLogin");
+const form = document.getElementById("form");
+const btnLogin = document.getElementById("btn-Login");
 const button = document.createElement("button");
-const box_form = document.querySelectorAll('.form_control');
+const boxForm = document.querySelectorAll('.form-control');
 
 const regexName = /^[a-zA-Z]*$/;
 const regexEmail = /^[\w]+@{1}[\w]+\.+[a-z]{2,3}$/;
@@ -75,110 +75,110 @@ const regexTel = /^\(?\d{2}\)?[\s\.-]?\d{4}[\s\.-]?\d{4}$/;
 const regexContra = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
 
 const errors = {
-  nombre:true,
-  email: true,
-  usuario:true,
-  contraseña: true,
+    name: true,
+    email: true,
+    user: true,
+    password: true,
 }
 
 // Itera el array de inputs y crea un evento que tiene una funcion para cada uno!
-box_form.forEach((box) =>{
-  const  input = box.querySelector('input');
+boxForm.forEach((box) => {
+    const input = box.querySelector('input');
 
-  input.addEventListener('input',(event)=>{
-    validationform(input)
-  })
+    input.addEventListener('input', (event) => {
+        validationform(input)
+    })
 })
 
-function validationform(input){
-    if (input.name === 'nombre'){
-        if (regexName.test(input.value) && input.value.length >= 3 && input.value.length <= 20 ) {
-          set_correct(input)
-        }else{
-          set_error(input, 'El campo debe contener al menos 3-20 caracteres, sin simbolos ')
+function validationform(input) {
+    if (input.name === 'name') {
+        if (regexName.test(input.value) && input.value.length >= 3 && input.value.length <= 20) {
+            set_correct(input)
+        } else {
+            set_error(input, 'The field must contain at least 3-20 characters, without symbols')
         }
-        if (input.value.trim() === ''){
-          set_error(input, "Por favor Complete el campo con su nombre")
+        if (input.value.trim() === 'Please fill in the field with your name') {
+            set_error(input, "")
         }
-       incompleteForm();
-      }
-    if (input.name === 'email'){
+        incompleteForm();
+    }
+    if (input.name === 'email') {
 
         if (regexEmail.test(input.value)) {
-          set_correct(input)
-        }else{
-          set_error(input, 'Por favor ingrese su email correctamente')
+            set_correct(input)
+        } else {
+            set_error(input, 'Please enter your email correctly')
         }
-        if (input.value.trim() === ''){
-          set_error(input, "Por favor Complete el campo con su email")
+        if (input.value.trim() === '') {
+            set_error(input, "Please fill in the field with your email")
         }
         incompleteForm();
-      }
-      if (input.name === 'usuario'){
-        if (regexName.test(input.value) && input.value.length >= 6 && input.value.length <= 20 ) {
-          set_correct(input)
-        }else{
-          set_error(input, 'El campo debe contener al menos 6-20 caracteres ')
+    }
+    if (input.name === 'user') {
+        if (regexName.test(input.value) && input.value.length >= 6 && input.value.length <= 20) {
+            set_correct(input)
+        } else {
+            set_error(input, 'The field must contain at least 6-20 characters ')
         }
-        if (input.value.trim() === ''){
-          set_error(input, "Por favor Complete el campo con su nombre de usuario")
+        if (input.value.trim() === '') {
+            set_error(input, "Please fill in the field with your username")
         }
-       incompleteForm();
-      }
-      if (input.name === 'contraseña'){
-  
+        incompleteForm();
+    }
+    if (input.name === 'password') {
+
         if (regexContra.test(input.value)) {
-          set_correct(input)
-        }else{
-          set_error(input, 'El campo debe contener mínimo ocho caracteres, al menos una letra y un número')
+            set_correct(input)
+        } else {
+            set_error(input, 'The field must contain at least eight characters, at least one letter and one number')
         }
-        if (input.value.trim() === ''){
-          set_error(input, "Por favor Complete el campo con su contraseña")
+        if (input.value.trim() === '') {
+            set_error(input, "Please fill in the field with your password")
         }
         incompleteForm();
-      }
+    }
 }
 
-function incompleteForm(){
-    if(errors.nombre){
+function incompleteForm() {
+    if (errors.name) {
         submit_btn.setAttribute('disabled', true)
-      }else {
+    } else {
         submit_btn.removeAttribute('disabled')
-      }
-    if(errors.email){
+    }
+    if (errors.email) {
         button.setAttribute('disabled', true)
-    }else {
+    } else {
         button.removeAttribute('disabled')
     }
-    if(errors.usuario){
+    if (errors.user) {
         submit_btn.setAttribute('disabled', true)
-      }else {
+    } else {
         submit_btn.removeAttribute('disabled')
-      }
-      if(errors.contaseña){
+    }
+    if (errors.password) {
         submit_btn.setAttribute('disabled', true)
-      }else {
+    } else {
         submit_btn.removeAttribute('disabled')
-      }
-    
-  }
+    }
+
+}
 
 // Funciones de Errores y Validaciones
 function set_error(input, msj) {
     const formCotrol = input.parentElement;
-    const parrafo = formCotrol.querySelector("p");
+    const paragraph = formCotrol.querySelector("p");
     input.style.border = "2px solid rgb(190, 36, 9)";
-    parrafo.style.display = "block";
-    parrafo.innerText = msj;
+    paragraph.style.display = "block";
+    paragraph.innerText = msj;
     errors[input.name] = true;
-  }
-  function set_correct(input) {
-    const grupoCampos = input.parentElement;
-    const parrafo = grupoCampos.querySelector("p");
-    input.style.border = "2px solid rgb(2, 184, 2)";
-    parrafo.style.display = "none";
-    parrafo.innerText = "";
-    errors[input.name] = false;
-  }
-// --------------------------------------------------------------------------------------
+}
 
+function set_correct(input) {
+    const fieldsGroup = input.parentElement;
+    const paragraph = fieldsGroup.querySelector("p");
+    input.style.border = "2px solid rgb(2, 184, 2)";
+    paragraph.style.display = "none";
+    paragraph.innerText = "";
+    errors[input.name] = false;
+}
+// --------------------------------------------------------------------------------------

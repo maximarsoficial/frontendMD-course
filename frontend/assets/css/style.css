@@ -30,14 +30,14 @@ label {
     position: absolute;
 }
 
-.contenedor-todo {
+.container-all {
     width: 100%;
     max-width: 800px;
     margin: auto;
     position: relative;
 }
 
-.caja-trasera {
+.back-box {
     width: 100%;
     padding: 10px 20px;
     display: flex;
@@ -47,18 +47,18 @@ label {
     background-color: rgba(0, 217, 255, 0.5);
 }
 
-.caja-trasera div {
+.back-box div {
     margin: 100px 40px;
     color: white;
     transition: all 350ms;
 }
 
-.caja-trasera div p,
-.caja-trasera button {
+.back-box div p,
+.back-box button {
     margin-top: 30px;
 }
 
-.caja-trasera button {
+.back-box button {
     padding: 10px 60px;
     border: 2px solid #fff;
     font-size: 15px;
@@ -67,7 +67,7 @@ label {
     color: white;
 }
 
-.caja-trasera button:hover {
+.back-box button:hover {
     background: #fff;
     color: #46A2FD;
 }
@@ -75,7 +75,7 @@ label {
 
 /*Formularios*/
 
-.contenedor-login-register {
+.container-login-register {
     display: flex;
     align-items: center;
     width: 100%;
@@ -86,7 +86,7 @@ label {
     transition: left 350ms;
 }
 
-.contenedor-login-register form {
+.container-login-register form {
     width: 100%;
     padding: 80px 20px;
     background: white;
@@ -94,14 +94,14 @@ label {
     border-radius: 50px;
 }
 
-.contenedor-login-register form h2 {
+.container-login-register form h2 {
     font-size: 40px;
     text-align: center;
     margin-bottom: 30px;
     color: rgba(0, 217, 255, 0.979);
 }
 
-.contenedor-login-register form input {
+.container-login-register form input {
     width: 100%;
     margin-top: 20px;
     padding: 10px;
@@ -110,7 +110,7 @@ label {
     font-size: 15px;
 }
 
-.contenedor-login-register form button {
+.container-login-register form button {
     padding: 10px 40px;
     margin-top: 40px;
     border: none;
@@ -126,23 +126,23 @@ label {
     main {
         margin-top: 25px;
     }
-    .caja-trasera {
+    .back-box {
         max-width: 350px;
         height: 300px;
         flex-direction: column;
         margin: auto;
     }
-    .caja-trasera div {
+    .back-box div {
         margin: 0px;
         position: absolute;
     }
     /*Formularios*/
-    .contenedor-login-register {
+    .container-login-register {
         top: -30px;
         left: -50px;
         margin: auto;
     }
-    .contenedor-login-register form {
+    .container-login-register form {
         position: relative;
     }
 }
